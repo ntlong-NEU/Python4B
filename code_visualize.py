@@ -1,8 +1,15 @@
-text = "sd sd aa ab aa ac ab"
-fre_words = {}
+class Dog:
+    '''a simple class ...of Dog'''
+    def __init__(self, name, age, weight):
+        self.ten = name
+        self.tuoi = age
+        self.nang = weight
+    def sit(self):
+        '''docstring of method 1'''
+        print('sitting')
+    def roll(self):
+        '''docstring of method 2'''
+        print('rolling')
 
-for w in text.split():
-    if w in fre_words:
-        fre_words[w] += 1
-    else:
-        fre_words[w] = 1
+my_dog = Dog('Xoai', '2kg', 2)
+print(my_dog.name)
